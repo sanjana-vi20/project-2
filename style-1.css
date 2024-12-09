@@ -1,0 +1,51 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.loginPage{
+  height: 100%;
+  width: 100%;
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.head{
+  text-align: center;
+}
+.form{
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.username{
+  border-radius: 10px;
+  border: 0px;
+  padding: 1rem;
+  background-color: rgba(235, 135, 95, 0.875);
+}
+.password{
+  border-radius: 10px;
+  border: 0px;
+  padding: 1rem;
+  background-color: rgba(235, 135, 95, 0.875);
+}
+.button{
+  padding: 1rem;
+  background-color: rgba(255, 68, 0, 0.877);
+  border: 0px;
+  border-radius: 10px;
+  width: 15rem;
+}
+.footersection{
+  padding-top: 3rem;
+}
+.footersection a{
+  text-decoration: none;
+  color:  rgba(255, 68, 0, 0.877);;
+}
+
