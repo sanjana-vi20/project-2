@@ -1,78 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign Up</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<style>
-  *{
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
-.loginPage{
-  height: 100%;
-  width: 100%;
-  margin-top: 7rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.SignUp{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .head{
-  text-align: center;
+    padding-top: 7rem;
 }
 .form{
-  margin: 3rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1.5rem;
+     margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
+
 .username{
-  border-radius: 10px;
-  border: 0px;
-  padding: 1rem;
-  background-color: rgba(235, 135, 95, 0.875);
-}
-.password{
-  border-radius: 10px;
-  border: 0px;
-  padding: 1rem;
-  background-color: rgba(235, 135, 95, 0.875);
+    padding: 1rem;
+    background-color:  rgba(235, 135, 95, 0.875);
+    border: 0px;
+    border-radius: 10px;
 }
 .button{
-  padding: 1rem;
-  background-color: rgba(255, 68, 0, 0.877);
-  border: 0px;
-  border-radius: 10px;
-  width: 15rem;
+    padding: 1rem;
+    border: 0px;
+    border-radius: 10px;
+    background-color: rgba(255, 68, 0, 0.877);
+}
+.image{
+    height:35px;
+    width: 35px;
+    padding: 5px;
+}
+a{
+    text-decoration: none;
+
+}
+.anchor{
+    margin-top: 1rem;
+   border: 2px solid rgba(255, 68, 0, 0.877); 
+   padding: 1rem;
+   width: 30%;
+   border-radius: 40px;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+.para{
+    padding-top: 10px;
+    color: black;
+}
+@media screen and(max-width: 320px) {
+.anchor{
+    width: 50%;
+}    
 }
 .footersection{
-  padding-top: 3rem;
+    padding: 3rem;
 }
-.footersection a{
-  text-decoration: none;
-  color:  rgba(255, 68, 0, 0.877);;
-}
-</style>
+
+
+    </style>
+</head>
 <body>
-  <div class="loginPage">
-    <div class="head">
-      <h1>Welcome Back</h1>
-      <p>Enter your credential for login</p>
-    </div>
-      <form action="submit" class="form">
-          <input type="username" placeholder="Username" class="username">
-          <input type="password" placeholder="Password" class="password">
-          <a href="#"><input type="button" value="Login Now" class="button"></a> 
-      </form>
-   <a href="#" style="color: rgb(255, 115, 7); text-decoration: none;">Forget password</a> 
-   <footer class = "footersection">
-     <span>Don't have an account? <a href="Signup page/">Sign Up</a></span>
-   </footer>  
-  </div>
+    <div class="SignUp">
+         <div class="head">
+            <h1>Sign Up</h1>
+            <p>Create your account</p>
+         </div>
+         <form action="submit" class="form">
+            <input type="username" placeholder="Username" class="username">
+            <input type="email" placeholder="Email" class="username" >
+            <input type="password" placeholder="Password" class="username">
+            <input type="password" placeholder="Confirm Password" class="username">
+            <input type="button" value="Sign up" class="button">
+         </form>
+         <p>Or</p>
+         <div class="anchor">
+             <div class="img">
+                <img src="https://img.icons8.com/?size=100&id=17949&format=png&color=000000" alt="" class="image">
+             </div>
+             <div class="para">
+                <a href="#" style="color: black;">Login with Google</a>
+             </div>
+         </div>
+        <footer class="footersection">
+            <p>Already have an account? <a href="" style="color:  rgba(255, 68, 0, 0.877);">Login</a></p>
+        </footer> 
+     </div>
 </body>
 </html>
